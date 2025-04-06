@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>علي بابا أحمد الدكروري</title>
+  <link rel="stylesheet" href="css/1.css">
+  <audio id="link-sound" src="click.mp3" preload="auto"></audio>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <img  id="myimg" src="img/1.jpg" >
+  <header>
+    <div class="logo-container">
+      <img src="img/1.png" alt="شعار الموقع" class="logo">
+      <h1>علي بابا أحمد الدكروري <br> التجاري والخدمي</h1>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="promo.mp4" type="video/mp4">
+      متصفحك لا يدعم عرض الفيديو.
+    </video>
+    <!-- ... باقي الكود كما هو ... -->
+
+<!-- ... باقي الكود كما هو ... -->
+
+<div class="hero-text">
+    <img src="img/45.jpg" alt="صورة مثيرة" class="hero-image">
+    <h2>اكتشف كل ما هو رائع ومثير معنا!</h2>
+    <a href="#" class="cta-button">ابدأ الآن</a>
+  </div>
+  
+  <!-- ... باقي الكود كما هو ... -->
+  
+  <!-- ... باقي الكود كما هو ... -->
+  
+  </section>
+
+  <nav class="main-control">
+    <ul>
+      <il><a href="2.html">التسويق العقاري</a></il>
+                <il><a href="3.html">التجاري</a></il>
+                <il><a href="4.html">التكلونيجيا</a></il>
+                <il><a href="5.html">المطاعم والمأكولات</a></il>
+                <il><a href="6.html">الورشه</a></il>
+                <il><a href="1.html">الرئيسة</a></il>
+    </ul>
+  </nav>
+
+  <section class="video-section">
+    <h3>شاهد عروضنا المميزة</h3>
+    <div class="videos">
+      <video controls class="extra-video">
+        <source src="vadio/1.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو.
+      </video>
+      <video controls class="extra-video">
+        <source src="vadio/2.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو.
+      </video>
+    </div>
+  </section>
+
+  <div class="side-menu-container">
+    <img src="img/menu.png" alt="فتح القائمة" class="menu-toggle">
+    <aside class="side-menu">
+      <span class="close-btn">×</span>
+      <h2>روابط التواصل الاجتماعي</h2>
+      <ul>
+        <a href="https://www.youtube.com/@Ahmedeldkrory2" target="_blank">
+          <img class="k1"  src="img/9.jpg" alt="قناة اليوتيوب">
+      </a>
+      <a href="https://www.youtube.com/@ahmed-eldakrory" target="_blank">
+        <img class="k1" src="img/6.jpg" alt="قناة اليوتيوب">
+    </a>
+    <a href="mailto:ahmdfwzyly6@gmail.com" >
+      <img class="k1" src="img/5.jpg" alt="الاميل">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61569878923724" target="_blank">
+      <img class="k1" src="img/2.jpg" alt="الفيس بوك">
+    </a>
+    <a href="https://wa.me/whatsapp:+0201500053127 target="_blank">
+      <img class="k1" src="img/4.jpg" alt="الواتساب">
+    </a>
+        <a href="https://join.skype.com/vJ2aS74abU3C" >
+                            <img class="k1" src="img/7.jpg" alt="سكاي بي ">
+                        </a>
+        
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr>
+    <div id="k1">العنوان/ حلف 7 شارع حسن رفعت سيدي بشر  قبلي الاسكندرية</div>
+    <div id="k2">تليفونات واتساب : 01221152075   01500053127  <br> 03/5276461</div>
+    <div id="k3">البريد الالكتروني ahmdfwzyly6@gmail.com      aaldkrwry08@gmail.com</div>
+
+
+</footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+    const closeBtn = document.querySelector('.close-btn');
+    const links = document.querySelectorAll('a');
+    const sound = document.getElementById('link-sound');
+
+    toggleBtn.addEventListener('click', () => {
+      sideMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sideMenu.classList.remove('open');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        sound.currentTime = 0;
+        sound.play();
+      });
+    });
+  </script>
+</body>
+</html>
